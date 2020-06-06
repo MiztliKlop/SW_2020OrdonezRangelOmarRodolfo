@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Registro</h1>
+    <hr>
+      <fieldset>
+        <legend>Profesor</legend><br>
+        <form class="" action="../Dynamics/Actividad7.php" method="post">
+        Nombre: <input type="text" name="nombre" value="" required pattern="( ?[A-ZÑÁ-Ú]{1}[a-zñá-ú]+ ?[a-zñá-ú]*)+" title="Ingrese la Primer Letra de su Nombre(s) en Mayúsculas"><br><br>
+        Apellido Paterno: <input type="text" name="" value="" required pattern="([A-ZÑÁ-Ú]{1}[a-zñá-ú]+)+" title="Ingrese La Primer Letra de su Apellido en Mayúsculas"><br><br>
+        Apellido Materno: <input type="text" name="" value="" required pattern="([A-ZÑÁ-Ú]{1}[a-zñá-ú]+)+" title="Ingrese La Primer Letra de su Apellido en Mayúsculas"><br><br>
+        Fecha de Nacimiento: <input type="date" name="" value="" required min="1920-01-01" max="2010-01-01"><br><br>
+        Colegio: <select class="Colegio" name="" required>
+                    <option value="">- Colegio -</option>
+                    <option value="">Ciencias</option>
+                    <option value="">Idiomas</option>
+                    <option value="">Estética</option>
+                    <option value="">Humanidades</option>
+                    <option value="">Otro</option>
+                  </select><br><br>
+        Usuario (RFC): <input type="text" name="rfc" value="" required pattern="^[A-Z]{4}\d{2}(0[1-9]|1[012])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[0-9A-Z]{3}$" title="Ingrese un Formato Válido de RFC (Sin Guiones)"><br><br>
+        <a href="https://www.mi-rfc.com.mx/consulta-rfc-homoclave" target="_blank">Cliq Aquí Para Revisar RFC</a><br><br>
+        Contraseña: <input type="password" name="" value="" pattern="^((?=\S*[A-Z])(?=\S*[a-z])(?=\S*\d)(?=\S*[@&%#!¡?¿.,]))\S{10,30}$" title="Ingrese Una Contraseña Segura: Usar combinaciones de caracteres especiales, números, y letras. Extensiones mayor a 10 caracteres." required><br><br>
+        <input type="submit" name="" value="Registrarse"><br><br>
+      </form>
+      </fieldset>
+  </body>
+</html>
