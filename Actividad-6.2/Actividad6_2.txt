@@ -1,0 +1,3 @@
+Regex Cazapalabras
+
+/(?<!\w|[á-úñÑ])[Rr]egex(?!\w|[á-úñÑ])/gm
