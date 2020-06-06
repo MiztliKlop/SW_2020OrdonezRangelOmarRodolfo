@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cifrado</title>
+    <style media="screen">
+      body
+      {
+        background-color: rgb(0, 76, 255);
+        text-align: center;
+        color: white;
+      }
+      input[type='text']
+      {
+        width:1500px;
+        height:500px;
+  border:1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cifrado3000</h1>
+    <hr>
+      <fieldset>
+        <legend>Ingrese Texto A Cifrar</legend><br>
+        Por favor, Ingrese Texto Sin: Caracteres del Alfabeto Latino. Solo Acepta Puntos, Comas y Signo De Interrogación Final. <br><br>
+        <form class="" action="../Dynamics/Actividad8.php" method="post">
+          <input type="text" name="texto" value="" required pattern="(,|\.|\?|\w|\s)+" title="Ingrese El Texto Correctamente"><br><br>
+        <input type="submit" name="envio" value="Registrarse"><br><br>
+      </form>
+      </fieldset>
+  </body>
+</html>
